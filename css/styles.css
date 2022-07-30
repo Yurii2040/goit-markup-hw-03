@@ -9,6 +9,16 @@
     --studio-employees-color: #f5f4fa;
     --address-color:  #FFFFFF99;
 }
+
+p, h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+
 body{
     font-family: 'Roboto', sans-serif;
     color: var(--page-hader-color);
@@ -22,7 +32,18 @@ body{
     text-decoration: none;
 }
 
-.page-header {}
+.container{
+    width: 1170px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+    outline: 2px solid red;
+}
+.page-header {
+    padding-top: 24px;
+    padding-bottom: 25px;
+    background-color: var(--prodact-color);
+}
 
 .header-nav {}
 
@@ -103,6 +124,10 @@ body{
 background-color: var(--background-hero-color);
 }
 
+.hero-container{
+
+}
+
 .hero-studio-title {
     font-family: 'Roboto';
     font-style: normal;
@@ -112,6 +137,8 @@ background-color: var(--background-hero-color);
     text-align: center;
     letter-spacing: 0.06em;
     color: var(--prodact-color);
+    margin-bottom: 40px;
+    max-width: 696px;
    }
 
 .hero-studio-btn {
@@ -124,6 +151,7 @@ background-color: var(--background-hero-color);
     letter-spacing: 0.06em;
     color: var(--prodact-color);
     background-color: var(--hover-hader-color);
+    display:inline-block;
 }
 
 
