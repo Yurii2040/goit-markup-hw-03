@@ -16,7 +16,7 @@ p, h1, h2, h3, h4, h5, h6 {
 
 ul{
     margin: 0;
-    padding: 0;
+    padding-left: 0;
 }
 
 body{
@@ -39,12 +39,16 @@ body{
     margin: 0 auto;
     outline: 2px solid red;
 }
-.page-header {
+.page-header{
     padding-top: 24px;
     padding-bottom: 25px;
     background-color: var(--prodact-color);
 }
 
+.page-container, .header-nav, .header-contact{
+    display: flex;
+    align-items: center;
+}
 
 .logo {
     font-family: 'Raleway';
@@ -55,18 +59,47 @@ body{
     letter-spacing: 0.03em;
     color: var(--logo-color);
     width: 145px;
+   
 }
 
 .logo-two {
     color: var(--hover-hader-color);
 }
  
-.contact-header{
+.header-list{
     display: flex;
+    margin-left: 93px;
+}
+
+.header-list .header-item{
+    margin-right: 50px;
+}
+
+.header-list .header-item:last-child{
+    margin-right: 0;
+}
+
+.header-nav .header-link{
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.header-contact{
+    display: flex;
+    margin-left: auto;
+    
+}
+
+.header-contact .header-contact-item{
+    margin-right: 50px;
+}
+
+.header-contact .header-contact-item:last-child {
+    margin-right: 0;
 }
 
 .header-link { 
-    display: block;
     font-family: 'Roboto';
     font-weight: 500;
     font-size: 14px;
@@ -83,6 +116,8 @@ body{
 .header-link { 
     color: var(--page-hader-color);
 }
+
+
 
 .header-mail, .header-tel {
     font-family: 'Roboto';
@@ -135,6 +170,7 @@ background-color: var(--background-hero-color);
 }
 
 .hero-studio{
+    text-align: center;
 }
 
 .hero-studio-title {
@@ -143,12 +179,9 @@ background-color: var(--background-hero-color);
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
-    text-align: center;
     letter-spacing: 0.06em;
     color: var(--prodact-color);
-    margin-bottom: 40px;
-    max-width: 696px;
-    padding-top: 200px;
+    padding:200px 452px 280px 452px;
 
    }
 
@@ -164,7 +197,9 @@ background-color: var(--background-hero-color);
     background-color: var(--hover-hader-color);
     min-width: 216px;
     margin-bottom: 210px;
-    border-radius: 5px;
+    border-radius: 4px;
+    border: 0;
+    padding: 10px 32px 10px;
 }
 
 
@@ -258,10 +293,10 @@ padding-bottom: 94px;
 flex-basis: calc((100% - 90px) / 4)
 }
 
-.tudio-employees-item{
+.studio-employees-item{
     background-color: var(--prodact-color);
 }
-
+ 
 .studio-employees-name {
     font-family: 'Roboto';
     font-style: normal;
@@ -270,6 +305,7 @@ flex-basis: calc((100% - 90px) / 4)
     line-height: 1.19;
     letter-spacing: 0.03em;
     text-align: center;
+    
 }
 
 .studio-employees-position {
