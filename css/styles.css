@@ -40,10 +40,10 @@ body{
     outline: 2px solid red;
 }
 .page-header{
-    padding-top: 24px;
-    padding-bottom: 25px;
     background-color: var(--prodact-color);
-    border: 1px solid #ECECEC;
+    border-bottom: 1px solid #ECECEC;
+    margin-bottom: 94px;
+    
 }
 
 .page-container, .header-nav, .header-contact{
@@ -89,7 +89,6 @@ body{
 .header-contact{
     display: flex;
     margin-left: auto;
-    
 }
 
 .header-contact .header-contact-item{
@@ -127,6 +126,8 @@ body{
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em; 
+    padding-top: 32px;
+    padding-bottom: 32px;
    
 }
 
@@ -172,6 +173,7 @@ background-color: var(--background-hero-color);
 
 .hero-studio{
     text-align: center;
+    padding: 200px 0;
 }
 
 .hero-studio-title {
@@ -182,8 +184,10 @@ background-color: var(--background-hero-color);
     line-height: 1.36;
     letter-spacing: 0.06em;
     color: var(--prodact-color);
-    padding:200px 452px 30px 452px;
-
+    text-transform: uppercase;
+    width: 696px;
+    margin-left: auto;
+    margin-right: auto;
    }
 
 .hero-studio-btn {
@@ -197,7 +201,6 @@ background-color: var(--background-hero-color);
     color: var(--prodact-color);
     background-color: var(--hover-hader-color);
     min-width: 216px;
-    margin-bottom: 200px;
     border-radius: 4px;
     border: 0;
     padding: 10px 32px 10px;
@@ -378,16 +381,25 @@ flex-basis: calc((100% - 90px) / 4)
 .hero-list-work{
 display: flex;
 flex-wrap: wrap;
-column-gap: 30px;
+gap: 30px;
+margin-bottom: 94px;
 
 
 }
 
 .work-examples{
-    margin-bottom: 30px;
     text-align: left;
     background-color: var(--prodact-color);
-    border: 1px solid #EEEEEE;
+    
+  
+}
+
+.container-hero-title{
+    padding: 20px 24px 20px 24px;
+    border-left: 1px solid #EEEEEE;
+    border-right: 1px solid #EEEEEE;
+    border-bottom: 1px solid #EEEEEE;
+    
 }
 
 .hero-title {
@@ -398,7 +410,7 @@ column-gap: 30px;
     line-height: 2;
     letter-spacing: 0.06em;
     color: var(--page-hader-color);
-    padding-top: 20px;
+    
 }
 
 .hero-after-title {
@@ -410,7 +422,7 @@ column-gap: 30px;
     letter-spacing: 0.03em;
     color: var(--contact-color);
     margin-top: 4px;
-    margin-bottom: 20px;
+    
 }
 
 /*--FOOTER--*/
@@ -427,7 +439,7 @@ column-gap: 30px;
     line-height: 1.19;
     letter-spacing: 0.03em;
     color: var(--prodact-color);
-    margin-top: 60px ;
+    margin-top: 60px;
     margin-bottom: 20px;
 }
 
@@ -436,15 +448,14 @@ column-gap: 30px;
 }
 
 .address-list{
+    margion-bottom: 60px
 }
 
 .addrees-item{
     padding-bottom: 9px ;
 }
 
-.addrees-item:last-child{
-    padding-bottom: 60px ;
-}
+
 
 .address-map:hover, .address-map:focus{
     color: var(--hover-hader-color);
