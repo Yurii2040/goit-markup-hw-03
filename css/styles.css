@@ -43,6 +43,7 @@ body{
     padding-top: 24px;
     padding-bottom: 25px;
     background-color: var(--prodact-color);
+    border: 1px solid #ECECEC;
 }
 
 .page-container, .header-nav, .header-contact{
@@ -196,12 +197,15 @@ background-color: var(--background-hero-color);
     color: var(--prodact-color);
     background-color: var(--hover-hader-color);
     min-width: 216px;
-    margin-bottom: 210px;
+    margin-bottom: 200px;
     border-radius: 4px;
     border: 0;
     padding: 10px 32px 10px;
 }
 
+.studio-works {
+    margin-bottom: 94px;
+}
 
 .studio-examples {
     font-family: 'Roboto';
@@ -212,6 +216,11 @@ background-color: var(--background-hero-color);
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--page-hader-color);
+}
+
+.studio-works-item{
+    margin-top: 94px;
+    margin-bottom: 94px;
 }
 
 .studio-after-title {
@@ -231,9 +240,10 @@ background-color: var(--background-hero-color);
     display: flex;
     flex-wrap: nowrap;
     column-gap: 30px;
-    padding-top: 94px;
-    padding-bottom: 94px;
+    margin-bottom: 94px;
 }
+
+
 
 
 .studio-works-title{
@@ -263,6 +273,7 @@ background-color: var(--background-hero-color);
     flex-wrap: nowrap;
     column-gap: 30px;
     padding-bottom: 94px;
+    mix-blend-mode: normal;
     
 }
 
@@ -279,8 +290,8 @@ background-color: var(--studio-employees-color);
     font-size: 36px;
     line-height: 1.17;
     letter-spacing: 0.03em;
-    padding-top: 94px;
     text-align: center;
+    padding-top: 94px;
     margin-bottom: 50px;
     
     
@@ -294,9 +305,13 @@ flex-basis: calc((100% - 90px) / 4)
 }
 
 .studio-employees-item{
+    border-radius: 0px 0px 4px 4px;
     background-color: var(--prodact-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
- 
+
+
+
 .studio-employees-name {
     font-family: 'Roboto';
     font-style: normal;
@@ -305,6 +320,8 @@ flex-basis: calc((100% - 90px) / 4)
     line-height: 1.19;
     letter-spacing: 0.03em;
     text-align: center;
+    padding-top: 30px;
+    padding-bottom: 10px;
     
 }
 
@@ -317,15 +334,21 @@ flex-basis: calc((100% - 90px) / 4)
     letter-spacing: 0.03em;
     color: var(--contact-color);
     text-align: center;
+    padding-bottom: 30px;
 }
 
 
 /*--PORTFOLIO--*/
+
+.hero{
+    margion-top: 94px;
+}
 .hero-list{
-    display: flex;
+    display:flex;
     column-gap: 8px;
-    padding-top: 94px;
-    padding-bottom: 50px;
+    align-items: center;
+   margin-bottom: 50px;
+   justify-content: center;
 }
 
 
@@ -339,8 +362,9 @@ flex-basis: calc((100% - 90px) / 4)
     letter-spacing: 0.03em;
     color: var(--page-hader-color);
     background-color: var(--studio-employees-color);
-    border-radius: 5px;
+    border-radius: 4px;
     border: 0;
+    padding:6px 22px 6px 22px ;
     
     
     
@@ -352,16 +376,18 @@ flex-basis: calc((100% - 90px) / 4)
 }
 
 .hero-list-work{
-    display: flex;
-    flex-wrap: wrap;
-    column-gap: 30px;
-    align-content: center;
-    margin-bottom: 94px;
+display: flex;
+flex-wrap: wrap;
+column-gap: 30px;
+
+
 }
 
 .work-examples{
     margin-bottom: 30px;
     text-align: left;
+    background-color: var(--prodact-color);
+    border: 1px solid #EEEEEE;
 }
 
 .hero-title {
@@ -372,6 +398,7 @@ flex-basis: calc((100% - 90px) / 4)
     line-height: 2;
     letter-spacing: 0.06em;
     color: var(--page-hader-color);
+    padding-top: 20px;
 }
 
 .hero-after-title {
@@ -382,6 +409,8 @@ flex-basis: calc((100% - 90px) / 4)
     line-height: 1.87;
     letter-spacing: 0.03em;
     color: var(--contact-color);
+    margin-top: 4px;
+    margin-bottom: 20px;
 }
 
 /*--FOOTER--*/
@@ -390,6 +419,7 @@ flex-basis: calc((100% - 90px) / 4)
     background-color: var(--background-hero-color);
 }
 .logo-footer{
+    display: inline-block;
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
@@ -397,10 +427,23 @@ flex-basis: calc((100% - 90px) / 4)
     line-height: 1.19;
     letter-spacing: 0.03em;
     color: var(--prodact-color);
+    margin-top: 60px ;
+    margin-bottom: 20px;
 }
 
 .address{
     font-style: normal;
+}
+
+.address-list{
+}
+
+.addrees-item{
+    padding-bottom: 9px ;
+}
+
+.addrees-item:last-child{
+    padding-bottom: 60px ;
 }
 
 .address-map:hover, .address-map:focus{
