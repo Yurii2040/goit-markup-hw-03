@@ -32,12 +32,18 @@ body{
     text-decoration: none;
 }
 
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
 .container{
     width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
-    outline: 2px solid red;
+    
 }
 .page-header{
     background-color: var(--prodact-color);
@@ -174,6 +180,7 @@ background-color: var(--background-hero-color);
 .hero-studio{
     text-align: center;
     padding: 200px 0;
+    margin-bottom: 94px;
 }
 
 .hero-studio-title {
@@ -188,6 +195,7 @@ background-color: var(--background-hero-color);
     width: 696px;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 30px;
    }
 
 .hero-studio-btn {
@@ -222,8 +230,7 @@ background-color: var(--background-hero-color);
 }
 
 .studio-works-item{
-    margin-top: 94px;
-    margin-bottom: 94px;
+   
 }
 
 .studio-after-title {
@@ -235,15 +242,24 @@ background-color: var(--background-hero-color);
     letter-spacing: 0.03em;
     color: var(--contact-color);
     max-width: 270px;
+    
 }
 
 /*--STUDIO PRODACT--*/
+
+.studio-prodact{
+    
+}
+
+.studio-works{
+    margin-bottom: 94px;
+}
 
 .studio-works-list{
     display: flex;
     flex-wrap: nowrap;
     column-gap: 30px;
-    margin-bottom: 94px;
+    
 }
 
 
@@ -257,7 +273,7 @@ background-color: var(--background-hero-color);
     line-height: 1.14;
     letter-spacing: 0.03em;
     color: var(--page-hader-color);
-    padding-bottom: 10px;
+    margin-bottom: 10px;
 }
 
 .studio-prodact-title {
@@ -273,11 +289,14 @@ background-color: var(--background-hero-color);
 
 .studio-prodact-list{
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     column-gap: 30px;
-    padding-bottom: 94px;
-    mix-blend-mode: normal;
+    margin-bottom: 94px;
     
+}
+
+.studio-prodact-item{
+   
 }
 
 /*--EMPLOYEEES--*/
@@ -297,14 +316,13 @@ background-color: var(--studio-employees-color);
     padding-top: 94px;
     margin-bottom: 50px;
     
-    
 }
 .studio-employees-list{
 display: flex;
 flex-wrap: nowrap;
 column-gap: 30px;
-padding-bottom: 94px;
-flex-basis: calc((100% - 90px) / 4)
+flex-basis: calc((100% - 90px) / 4);
+margin-bottom: 94px;
 }
 
 .studio-employees-item{
@@ -323,7 +341,7 @@ flex-basis: calc((100% - 90px) / 4)
     line-height: 1.19;
     letter-spacing: 0.03em;
     text-align: center;
-    padding-top: 30px;
+    padding-top: 30px ;
     padding-bottom: 10px;
     
 }
@@ -448,7 +466,7 @@ margin-bottom: 94px;
 }
 
 .address-list{
-    margion-bottom: 60px
+    margion-bottom: 60px;
 }
 
 .addrees-item{
