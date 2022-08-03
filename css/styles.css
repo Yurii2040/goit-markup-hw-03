@@ -48,7 +48,7 @@ img {
 .page-header{
     background-color: var(--prodact-color);
     border-bottom: 1px solid #ECECEC;
-    margin-bottom: 94px;
+   
     
 }
 
@@ -180,7 +180,7 @@ background-color: var(--background-hero-color);
 .hero-studio{
     text-align: center;
     padding: 200px 0;
-    margin-bottom: 94px;
+    
 }
 
 .hero-studio-title {
@@ -215,7 +215,8 @@ background-color: var(--background-hero-color);
 }
 
 .studio-works {
-    margin-bottom: 94px;
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 
 .studio-examples {
@@ -248,12 +249,9 @@ background-color: var(--background-hero-color);
 /*--STUDIO PRODACT--*/
 
 .studio-prodact{
-    
+    padding-bottom: 94px;
 }
 
-.studio-works{
-    margin-bottom: 94px;
-}
 
 .studio-works-list{
     display: flex;
@@ -291,8 +289,6 @@ background-color: var(--background-hero-color);
     display: flex;
     flex-wrap: wrap;
     column-gap: 30px;
-    margin-bottom: 94px;
-    
 }
 
 .studio-prodact-item{
@@ -303,6 +299,8 @@ background-color: var(--background-hero-color);
 
 .studio-employees {
 background-color: var(--studio-employees-color);
+padding-top: 94px;
+padding-bottom: 94px;
 }
 
 .studio-employees-title {
@@ -313,7 +311,6 @@ background-color: var(--studio-employees-color);
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-align: center;
-    padding-top: 94px;
     margin-bottom: 50px;
     
 }
@@ -322,7 +319,6 @@ display: flex;
 flex-wrap: nowrap;
 column-gap: 30px;
 flex-basis: calc((100% - 90px) / 4);
-padding-bottom: 94px;
 }
 
 .studio-employees-item{
@@ -342,7 +338,7 @@ padding-bottom: 94px;
     letter-spacing: 0.03em;
     text-align: center;
     padding-top: 30px ;
-    padding-bottom: 10px;
+    margin-bottom: 10px;
     
 }
 
@@ -362,7 +358,8 @@ padding-bottom: 94px;
 /*--PORTFOLIO--*/
 
 .hero{
-    margion-top: 94px;
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 .hero-list{
     display:flex;
@@ -400,9 +397,6 @@ padding-bottom: 94px;
 display: flex;
 flex-wrap: wrap;
 gap: 30px;
-margin-bottom: 94px;
-
-
 }
 
 .work-examples{
@@ -428,6 +422,7 @@ margin-bottom: 94px;
     line-height: 2;
     letter-spacing: 0.06em;
     color: var(--page-hader-color);
+    margin-bottom: 4px;
     
 }
 
@@ -439,14 +434,14 @@ margin-bottom: 94px;
     line-height: 1.87;
     letter-spacing: 0.03em;
     color: var(--contact-color);
-    margin-top: 4px;
-    
 }
 
 /*--FOOTER--*/
 
 .footer {
     background-color: var(--background-hero-color);
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 .logo-footer{
     display: inline-block;
@@ -457,7 +452,6 @@ margin-bottom: 94px;
     line-height: 1.19;
     letter-spacing: 0.03em;
     color: var(--prodact-color);
-    margin-top: 60px;
     margin-bottom: 20px;
 }
 
@@ -470,9 +464,12 @@ margin-bottom: 94px;
 }
 
 .addrees-item{
-    padding-bottom: 9px ;
+    margin-bottom: 9px ;
 }
 
+.addrees-item:last-child{
+    margin-bottom: 0;
+}
 
 
 .address-map:hover, .address-map:focus{
